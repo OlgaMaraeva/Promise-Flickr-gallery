@@ -2,9 +2,9 @@
    url: 'http://api.flickr.com/services/feeds/groups_pool.gne?id=807213@N20&lang=en-us&format=json&jsoncallback=?',
    dataType: 'jsonp'
  }).then(data => {
-   var items = data.items;
+   const items = data.items;
    items.forEach((el) => {
-     var img = new Image();
+     const img = new Image();
      img.src = el.media.m;
      img.className = "pics";
      setTimeout(() => {
